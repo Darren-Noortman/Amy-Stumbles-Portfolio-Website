@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Page Title -->
+    <title>Amy Stumbles | Biologist Portfolio</title>
+
+    <!-- Compressed Styles -->
+    <link href="css/slides.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compressed Scripts -->
+    <script src="js/slides.min.js" type="text/javascript"></script>
+
+    <!-- Custom Scripts -->
+    <!-- <script src="js/custom.js" type="text/javascript"></script> -->
+
+    <!-- Fonts and Material Icons -->
+    <link
+      rel="stylesheet"
+      as="font"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"
+    />
+
+    <!-- NAV: precise hide-down / appear-up CSS (assistant-inserted) -->
+    <style id="nav-precise-css">
+      /* Ensure transitions */
+      header,
+      .nav-menu,
+      nav {
+        transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
+          opacity 0.18s ease-in-out;
+        -webkit-transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
+          opacity 0.18s ease-in-out;
+      }
+
+      /* Hidden: slide up and invisible */
+      .nav-hidden {
+        transform: translateY(-120%) !important;
+        opacity: 0 !important;
+        pointer-events: none;
+      }
+
+      /* Temporary sticky while scrolling up */
+      .navbar-sticky {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+    <!-- END NAV CSS -->
+  </head>
+  <body class="slides chain simplifiedMobile animated">
+    <!-- Top Navigation -->
+    <nav class="panel top">
+      <div class="sections desktop">
+        <div class="left">
+          <a href="index.html" class="logo" title="Home">
+            <img
+              src="assets/img/amy-logo-white.png"
+              alt="Amy Logo"
+              style="height: 56px; display: block"
+            />
+          </a>
+        </div>
+        <div class="center">
+          <ul class="menu uppercase">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right"></div>
+      </div>
+      <div class="sections compact hidden">
+        <div class="left">
+          <a href="index.html" title="Slides Framework">
+            <img
+              src="assets/img/amy-logo-white.png"
+              alt="Amy Logo"
+              style="height: 44px; display: block"
+            />
+          </a>
+        </div>
+        <div class="right"></div>
+      </div>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="side pole">
+      <div class="navigation">
+        <ul></ul>
+      </div>
+    </nav>
+
+    <!-- Slide 2 (#75) -->
+    <section id="studies" data-name="slide-2" class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-10-12 toCenter">
+              <h1 class="ae-1">Who I Am</h1>
+              <p class="ae-2">
+                <span class="opacity-8"
+                  >I am a nature-loving person with a passion for wildlife and
+                  conservation. I have a strong background in biological
+                  sciences and extensive hands-on experience working with
+                  seabirds, penguins, and native wildlife. My goal is to protect
+                  and care for animals while inspiring others to appreciate the
+                  natural environment.</span
+                >
+              </p>
+            </div>
+            <div class="fix-12-12">
+              <div class="fix-12-12">
+                <ul
+                  class="about-gallery ae-3 controller popupTrigger"
+                  data-popup-id="75-1"
+                  data-slider-id="75-1"
+                >
+                  <!-- BIG frog tile -->
+                  <li class="about-photo about-photo--big">
+                    <img src="assets/img/about-img1.jpg" alt="Toad on leaf" />
+                  </li>
+
+                  <!-- Small chick tile -->
+                  <li class="about-photo about-photo--small">
+                    <img
+                      src="assets/img/education-card-img.png"
+                      alt="Amy and Penguin"
+                    />
+                  </li>
+
+                  <!-- Tall chick tile -->
+                  <li class="about-photo about-photo--tall">
+                    <img
+                      src="assets/img/about-img7.jpeg"
+                      alt="Penguin chick standing"
+                    />
+                  </li>
+
+                  <!-- Small penguin pair (fills one small gap) -->
+                  <li class="about-photo about-photo--small">
+                    <img
+                      src="assets/img/aardvark-tile.jpg"
+                      alt="Two penguins"
+                    />
+                  </li>
+
+                  <!-- Wide fluffy penguin backs -->
+                  <li class="about-photo about-photo--wide">
+                    <img
+                      src="assets/img/tile3.jpg"
+                      alt="Fluffy penguin backs"
+                    />
+                  </li>
+
+                  <!-- Small toad close-up (new small spot #1) -->
+                  <li class="about-photo about-photo--small">
+                    <img src="assets/img/about-img5.jpg" alt="Toad close up" />
+                  </li>
+
+                  <!-- Wide frog-in-forest (new small spot #2, but wide) -->
+                  <li class="about-photo about-photo--wide">
+                    <img src="assets/img/about-img6.jpg" alt="Toad in forest" />
+                  </li>
+
+                  <!-- Extra small chick repeat to help fill any leftover hole -->
+                  <li class="about-photo about-photo--small">
+                    <img src="assets/img/tile4.jpg" alt="Penguin chick again" />
+                  </li>
+                  <!-- NEW small tile #1 -->
+                  <li class="about-photo about-photo--wide">
+                    <img
+                      src="assets/img/Public Speaking.jpg"
+                      alt="Penguin close-up repeat"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="fix-10-12 toCenter">
+              <h1 class="ae-1">My Passion</h1>
+              <p class="ae-2">
+                <span class="opacity-8"
+                  >My work with organizations such as SANCCOB and the Two Oceans
+                  Aquarium has given me the opportunity to care for endangered
+                  species and contribute to vital rehabilitation programs. I
+                  believe conservation starts with awareness — teaching people
+                  about the animals we share the world with helps create lasting
+                  change. I'm motivated by curiosity and compassion, always
+                  eager to learn more about the balance between wildlife,
+                  people, and the environment. Whether it's through research,
+                  animal care, or public education, I strive to make a
+                  meaningful difference in conservation efforts across South
+                  Africa and beyond.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="background"
+        style="
+          background-image: url(assets/img/background/about-background.jpg);
+        "
+      ></div>
+    </section>
+
+    <!-- Popup Gallery -->
+    <div class="popup animated" data-popup-id="75-1">
+      <div class="close">
+        <svg>
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="#close"
+          ></use>
+        </svg>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="wrap spaces">
+            <ul
+              class="slider animated ae-1 fromAbove inlineBlock clickable popupContent disableSelect"
+              data-slider-id="75-1"
+              style="display: inline-block"
+            >
+              <li class="selected">
+                <img
+                  src="assets/img/about-img1.jpg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/education-card-img.png"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/about-img7.jpeg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/aardvark-tile.jpg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/about-img4.jpg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/about-img5.jpg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/about-img6.jpg"
+                  class="rounded"
+                  alt="Image"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAV: precise hide-down / appear-up JS (assistant-inserted) -->
+    <script id="nav-precise-js">
+      (function () {
+        // Helper for safe console
+        function safeLog() {
+          try {
+            console.log.apply(console, arguments);
+          } catch (e) {}
+        }
+        // Candidate selectors in order of preference
+        var selectors = [
+          "header .nav-menu",
+          "header nav",
+          "header .navbar-nav",
+          "header",
+          ".nav-menu",
+          "nav.nav-menu",
+          "nav",
+          ".navbar",
+          ".navbar-nav",
+        ];
+        var nav = null;
+        var header = document.querySelector("header");
+        for (var i = 0; i < selectors.length; i++) {
+          var s = selectors[i];
+          var el =
+            (header ? header.querySelector(s) : null) ||
+            document.querySelector(s);
+          if (el) {
+            nav = el;
+            break;
+          }
+        }
+        // If still not found, fallback to first <nav> element
+        if (!nav) nav = document.querySelector("nav");
+        if (!nav) {
+          safeLog("nav-precise-js: no nav element found - exiting");
+          return;
+        }
+
+        // Expose for debug (will not affect site)
+        try {
+          window.__navBehavior = {
+            attachedTo:
+              nav.tagName +
+              (nav.id ? "#" + nav.id : "") +
+              (nav.className ? "." + nav.className.replace(/\s+/g, ".") : ""),
+          };
+        } catch (e) {}
+
+        var lastScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+        var ticking = false;
+        var navHeight = nav.offsetHeight || 0;
+        var isSticky = false;
+        var isHidden = false;
+        var idleTimer = null;
+        var UNSTICK_DELAY = 180; // ms to unstick after upward scroll stops
+
+        function setBodyPadding(px) {
+          try {
+            document.body.style.paddingTop = px ? px + "px" : "";
+          } catch (e) {}
+        }
+
+        function showAndStick() {
+          if (isHidden) {
+            nav.classList.remove("nav-hidden");
+            isHidden = false;
+          }
+          if (!isSticky) {
+            nav.classList.add("navbar-sticky");
+            navHeight = nav.offsetHeight || navHeight;
+            setBodyPadding(navHeight);
+            isSticky = true;
+          }
+          if (idleTimer) clearTimeout(idleTimer);
+          idleTimer = setTimeout(function () {
+            // If still not at top, unstick but keep visible
+            var now = window.pageYOffset || document.documentElement.scrollTop;
+            if (now > 0) {
+              if (isSticky) {
+                nav.classList.remove("navbar-sticky");
+                setBodyPadding(0);
+                isSticky = false;
+              }
+            }
+            idleTimer = null;
+          }, UNSTICK_DELAY);
+        }
+
+        function hideAndUnstick() {
+          if (!isHidden) {
+            nav.classList.add("nav-hidden");
+            isHidden = true;
+          }
+          if (isSticky) {
+            nav.classList.remove("navbar-sticky");
+            setBodyPadding(0);
+            isSticky = false;
+          }
+          if (idleTimer) {
+            clearTimeout(idleTimer);
+            idleTimer = null;
+          }
+        }
+
+        function onScroll() {
+          var current =
+            window.pageYOffset || document.documentElement.scrollTop;
+          var delta = current - lastScroll;
+
+          // Clear any pending idle timer
+          if (idleTimer) {
+            clearTimeout(idleTimer);
+            idleTimer = null;
+          }
+
+          // If at top, show (but NOT sticky)
+          if (current <= 0) {
+            if (isHidden) {
+              nav.classList.remove("nav-hidden");
+              isHidden = false;
+            }
+            if (isSticky) {
+              nav.classList.remove("navbar-sticky");
+              setBodyPadding(0);
+              isSticky = false;
+            }
+            lastScroll = current;
+            ticking = false;
+            return;
+          }
+
+          if (delta > 5) {
+            // scrolling down -> hide and unstick
+            hideAndUnstick();
+          } else if (delta < -5) {
+            // scrolling up -> show and stick while moving up
+            showAndStick();
+          }
+
+          lastScroll = current;
+          ticking = false;
+        }
+
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!ticking) {
+              window.requestAnimationFrame(onScroll);
+              ticking = true;
+            }
+          },
+          { passive: true }
+        );
+
+        window.addEventListener("resize", function () {
+          navHeight = nav.offsetHeight || navHeight;
+          if (isSticky) setBodyPadding(navHeight);
+        });
+
+        // Initialize: if at top -> visible not sticky; else hidden until user scrolls up
+        var startY = window.pageYOffset || document.documentElement.scrollTop;
+        if (startY <= 0) {
+          nav.classList.remove("nav-hidden");
+          nav.classList.remove("navbar-sticky");
+          setBodyPadding(0);
+          isHidden = false;
+          isSticky = false;
+        } else {
+          nav.classList.add("nav-hidden");
+          nav.classList.remove("navbar-sticky");
+          setBodyPadding(0);
+          isHidden = true;
+          isSticky = false;
+        }
+      })();
+    </script>
+    <!-- END NAV JS -->
+  </body>
+</html>

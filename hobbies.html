@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Page Title -->
+    <title>Amy Stumbles | Biologist Portfolio</title>
+
+    <!-- Compressed Styles -->
+    <link href="css/slides.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom Styles -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Compressed Scripts -->
+    <script src="js/slides.min.js" type="text/javascript"></script>
+
+    <!-- Custom Scripts -->
+    <!-- <script src="js/custom.js" type="text/javascript"></script> -->
+
+    <!-- Fonts and Material Icons -->
+    <link
+      rel="stylesheet"
+      as="font"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700|Material+Icons"
+    />
+
+    <!-- NAV: precise hide-down / appear-up CSS (assistant-inserted) -->
+    <style id="nav-precise-css">
+      /* Ensure transitions */
+      header,
+      .nav-menu,
+      nav {
+        transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
+          opacity 0.18s ease-in-out;
+        -webkit-transition: transform 0.22s cubic-bezier(0.2, 0.9, 0.2, 1),
+          opacity 0.18s ease-in-out;
+      }
+
+      /* Hidden: slide up and invisible */
+      .nav-hidden {
+        transform: translateY(-120%) !important;
+        opacity: 0 !important;
+        pointer-events: none;
+      }
+
+      /* Temporary sticky while scrolling up */
+      .navbar-sticky {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2000;
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+    </style>
+    <!-- END NAV CSS -->
+  </head>
+  <body class="slides chain simplifiedMobile animated">
+    <!-- Top Navigation -->
+    <nav class="panel top">
+      <div class="sections desktop">
+        <div class="left">
+          <a href="index.html" class="logo" title="Home">
+            <img
+              src="assets/img/amy-logo-white.png"
+              alt="Amy Logo"
+              style="height: 56px; display: block"
+            />
+          </a>
+        </div>
+        <div class="center">
+          <ul class="menu uppercase">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="right"></div>
+      </div>
+      <div class="sections compact hidden">
+        <div class="left">
+          <a href="index.html" title="Slides Framework">
+            <img
+              src="assets/img/amy-logo-white.png"
+              alt="Amy Logo"
+              style="height: 44px; display: block"
+            />
+          </a>
+        </div>
+        <div class="right"></div>
+      </div>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="side pole">
+      <div class="navigation">
+        <ul></ul>
+      </div>
+    </nav>
+
+    <!-- Slide 4 (#27) -->
+    <section id="about" data-name="slide-4" class="slide fade-6 kenBurns">
+      <div class="content">
+        <div class="container">
+          <div class="wrap">
+            <div class="fix-12-12">
+              <ul class="flex verticalCenter">
+                <li class="col-5-12 cell-27">
+                  <div class="fix-4-12">
+                    <ul
+                      class="slider clickable ae-1 fromAbove"
+                      data-slider-id="27-3"
+                    >
+                      <li class="selected">
+                        <img
+                          src="assets/img/hobby1.jpg"
+                          alt="Apple Watch Thumbnail"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="assets/img/hobby2.jpg"
+                          alt="Apple Watch Thumbnail"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="assets/img/hobby3.jpg"
+                          alt="Apple Watch Thumbnail"
+                        />
+                      </li>
+                      <li>
+                        <img
+                          src="assets/img/hobby4.avif"
+                          alt="Apple Watch Thumbnail"
+                        />
+                      </li>
+                    </ul>
+                    <ul
+                      class="controller dots ae-2 fromCenter margin-top-3"
+                      data-slider-id="27-3"
+                    >
+                      <li class="dot selected"></li>
+                      <li class="dot"></li>
+                      <li class="dot"></li>
+                      <li class="dot"></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="col-7-12 left">
+                  <!-- main title and lead — these will update with the slider -->
+                  <h1 class="ae-2 fromRight" id="hobby-title">Be creative</h1>
+                  <div class="ae-3 fromRight">
+                    <p class="opacity-8" id="hobby-lead">
+                      When we feel less secure, with less control over our daily
+                      lives, we reach out to brands to connect with a time when
+                      things seemed&nbsp;better.
+                    </p>
+                  </div>
+
+                  <!-- removed the small icon + text block as requested -->
+                  <!-- previously: <img src="assets/img/icon-2.png" ...> + .text-26 -->
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="background"
+        style="background-image: url(assets/img/hobby-background.jpg)"
+      ></div>
+    </section>
+
+    <!-- NAV: precise hide-down / appear-up JS (assistant-inserted) -->
+    <script id="nav-precise-js">
+      (function () {
+        // Helper for safe console
+        function safeLog() {
+          try {
+            console.log.apply(console, arguments);
+          } catch (e) {}
+        }
+        // Candidate selectors in order of preference
+        var selectors = [
+          "header .nav-menu",
+          "header nav",
+          "header .navbar-nav",
+          "header",
+          ".nav-menu",
+          "nav.nav-menu",
+          "nav",
+          ".navbar",
+          ".navbar-nav",
+        ];
+        var nav = null;
+        var header = document.querySelector("header");
+        for (var i = 0; i < selectors.length; i++) {
+          var s = selectors[i];
+          var el =
+            (header ? header.querySelector(s) : null) ||
+            document.querySelector(s);
+          if (el) {
+            nav = el;
+            break;
+          }
+        }
+        // If still not found, fallback to first <nav> element
+        if (!nav) nav = document.querySelector("nav");
+        if (!nav) {
+          safeLog("nav-precise-js: no nav element found - exiting");
+          return;
+        }
+
+        // Expose for debug (will not affect site)
+        try {
+          window.__navBehavior = {
+            attachedTo:
+              nav.tagName +
+              (nav.id ? "#" + nav.id : "") +
+              (nav.className ? "." + nav.className.replace(/\s+/g, ".") : ""),
+          };
+        } catch (e) {}
+
+        var lastScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+        var ticking = false;
+        var navHeight = nav.offsetHeight || 0;
+        var isSticky = false;
+        var isHidden = false;
+        var idleTimer = null;
+        var UNSTICK_DELAY = 180; // ms to unstick after upward scroll stops
+
+        function setBodyPadding(px) {
+          try {
+            document.body.style.paddingTop = px ? px + "px" : "";
+          } catch (e) {}
+        }
+
+        function showAndStick() {
+          if (isHidden) {
+            nav.classList.remove("nav-hidden");
+            isHidden = false;
+          }
+          if (!isSticky) {
+            nav.classList.add("navbar-sticky");
+            navHeight = nav.offsetHeight || navHeight;
+            setBodyPadding(navHeight);
+            isSticky = true;
+          }
+          if (idleTimer) clearTimeout(idleTimer);
+          idleTimer = setTimeout(function () {
+            // If still not at top, unstick but keep visible
+            var now = window.pageYOffset || document.documentElement.scrollTop;
+            if (now > 0) {
+              if (isSticky) {
+                nav.classList.remove("navbar-sticky");
+                setBodyPadding(0);
+                isSticky = false;
+              }
+            }
+            idleTimer = null;
+          }, UNSTICK_DELAY);
+        }
+
+        function hideAndUnstick() {
+          if (!isHidden) {
+            nav.classList.add("nav-hidden");
+            isHidden = true;
+          }
+          if (isSticky) {
+            nav.classList.remove("navbar-sticky");
+            setBodyPadding(0);
+            isSticky = false;
+          }
+          if (idleTimer) {
+            clearTimeout(idleTimer);
+            idleTimer = null;
+          }
+        }
+
+        function onScroll() {
+          var current =
+            window.pageYOffset || document.documentElement.scrollTop;
+          var delta = current - lastScroll;
+
+          // Clear any pending idle timer
+          if (idleTimer) {
+            clearTimeout(idleTimer);
+            idleTimer = null;
+          }
+
+          // If at top, show (but NOT sticky)
+          if (current <= 0) {
+            if (isHidden) {
+              nav.classList.remove("nav-hidden");
+              isHidden = false;
+            }
+            if (isSticky) {
+              nav.classList.remove("navbar-sticky");
+              setBodyPadding(0);
+              isSticky = false;
+            }
+            lastScroll = current;
+            ticking = false;
+            return;
+          }
+
+          if (delta > 5) {
+            // scrolling down -> hide and unstick
+            hideAndUnstick();
+          } else if (delta < -5) {
+            // scrolling up -> show and stick while moving up
+            showAndStick();
+          }
+
+          lastScroll = current;
+          ticking = false;
+        }
+
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!ticking) {
+              window.requestAnimationFrame(onScroll);
+              ticking = true;
+            }
+          },
+          { passive: true }
+        );
+
+        window.addEventListener("resize", function () {
+          navHeight = nav.offsetHeight || navHeight;
+          if (isSticky) setBodyPadding(navHeight);
+        });
+
+        // Initialize: if at top -> visible not sticky; else hidden until user scrolls up
+        var startY = window.pageYOffset || document.documentElement.scrollTop;
+        if (startY <= 0) {
+          nav.classList.remove("nav-hidden");
+          nav.classList.remove("navbar-sticky");
+          setBodyPadding(0);
+          isHidden = false;
+          isSticky = false;
+        } else {
+          nav.classList.add("nav-hidden");
+          nav.classList.remove("navbar-sticky");
+          setBodyPadding(0);
+          isHidden = true;
+          isSticky = false;
+        }
+      })();
+    </script>
+
+    <!-- HOBBIES slider + autoplay + text-sync script -->
+    <script>
+      (function () {
+        // === Configuration: the hobby content for each slide (order = slide <li> order) ===
+        // If you later change the number/order of slides, either update this array
+        // or add/remove <li> to match.
+        var hobbyItems = [
+          {
+            title: "Hiking & Nature Walks",
+            lead: "I love spending time outdoors, hiking through nature reserves and exploring new trails. Being out in the open, surrounded by plants and animals, gives me peace and reminds me why I’m passionate about conservation.",
+            sub: "Hiking & Nature Walks",
+            tiny: "",
+          },
+          {
+            title: "Nail Art & Painting",
+            lead: "I enjoy being creative through nail art and painting. Designing small detailed art pieces is both calming and fun, and it lets me express myself in a colorful, unique way.",
+            sub: "Nail Art & Painting",
+            tiny: "I love mixing nature-inspired designs like flowers, animals, and ocean colours into my art.",
+          },
+          {
+            title: "Diving & Ocean Exploration",
+            lead: "My next big adventure is diving! I’m excited to gain more experience underwater and explore the marine environments I help protect. Diving is a perfect way to connect directly with ocean life and understand conservation from a new perspective.",
+            sub: "Diving & Ocean Exploration",
+            tiny: "",
+          },
+          {
+            title: "Park Runs & Fitness",
+            lead: "Staying fit and active is important to me. I enjoy participating in park runs — they’re fun, social, and a great way to start the weekend with positive energy. It keeps me motivated and connected with like-minded people.",
+            sub: "Park Runs & Fitness",
+            tiny: "",
+          },
+          {
+            title: "Reading & Learning",
+            lead: "I love reading, especially books about nature, animals, and personal growth. It’s a way for me to relax while still learning new ideas and discovering fresh perspectives about life and the world around us.",
+            sub: "Reading & Learning",
+            tiny: "",
+          },
+        ];
+
+        // === Selectors and elements ===
+        var sliderSelector = 'ul[data-slider-id="27-3"]';
+        var slider = document.querySelector(sliderSelector);
+        if (!slider) {
+          console.warn("Hobbies script: slider not found:", sliderSelector);
+          return;
+        }
+
+        var dotsWrapper = document.querySelector(
+          'ul.controller[data-slider-id="27-3"]'
+        );
+
+        // text targets
+        var titleEl =
+          document.getElementById("hobby-title") ||
+          document.querySelector(".fix-12-12 h1") ||
+          document.querySelector("h1");
+        var leadEl =
+          document.getElementById("hobby-lead") ||
+          document.querySelector(".leadin") ||
+          document.querySelector(".opacity-8 p") ||
+          document.querySelector(".fix-12-12 p");
+
+        // defensive logging so we know what's missing
+        if (!titleEl || !leadEl) {
+          console.info(
+            "Hobbies script: text targets missing (title/lead). Script will attempt to proceed with available elements."
+          );
+        }
+
+        // helpers
+        var slides = Array.prototype.slice.call(slider.querySelectorAll("li"));
+        var dots = dotsWrapper
+          ? Array.prototype.slice.call(dotsWrapper.querySelectorAll("li"))
+          : [];
+        var SLIDE_COUNT = Math.max(slides.length, 1);
+
+        // map hobby item index to slide index using modulo so text can rotate
+        function mapIndexToSlide(i) {
+          // if you have more hobbies than slides, wrap around
+          return i % SLIDE_COUNT;
+        }
+
+        // read current selected index (by class)
+        function currentSelectedIndex() {
+          for (var i = 0; i < slides.length; i++) {
+            if (slides[i].classList.contains("selected")) return i;
+          }
+          return 0;
+        }
+
+        // apply selected class to slide and update dots
+        function setSelectedSlide(slideIndex) {
+          slides.forEach(function (s, idx) {
+            if (idx === slideIndex) {
+              s.classList.add("selected");
+            } else {
+              s.classList.remove("selected");
+            }
+          });
+          if (dots.length) {
+            dots.forEach(function (d, idx) {
+              if (idx === slideIndex) d.classList.add("selected");
+              else d.classList.remove("selected");
+            });
+          }
+        }
+
+        // update title + lead with a small fade
+        function updateTextForIndex(itemIndex) {
+          var item = hobbyItems[itemIndex % hobbyItems.length];
+          if (!item) return;
+          function fadeSet(el, text) {
+            if (!el) return;
+            if (el.textContent.trim() === text.trim()) return;
+            el.style.transition = "opacity 260ms ease";
+            el.style.opacity = 0;
+            setTimeout(function () {
+              el.textContent = text;
+              el.style.opacity = 1;
+            }, 260);
+          }
+          fadeSet(titleEl, item.title || "");
+          fadeSet(leadEl, item.lead || "");
+        }
+
+        // moved-to index is hobbyIndex; slideIndex is where the images move to
+        function goToHobbyIndex(hobbyIndex) {
+          var slideIndex = mapIndexToSlide(hobbyIndex);
+          setSelectedSlide(slideIndex);
+          updateTextForIndex(hobbyIndex);
+        }
+
+        // Make controller clicks update the text (and stop autoplay briefly)
+        if (dotsWrapper) {
+          dotsWrapper.addEventListener("click", function (ev) {
+            var dot = ev.target.closest("li");
+            if (!dot) return;
+            var dotIndex = dots.indexOf(dot);
+            if (dotIndex < 0) return;
+            // pick a hobbyIndex that maps to this slideIndex. we choose the first hobbyIndex
+            // whose mapped slide matches dotIndex, i.e. dotIndex, dotIndex + SLIDE_COUNT, ...
+            goToHobbyIndex(dotIndex);
+            pauseAutoplayTemporarily();
+          });
+        }
+
+        // also allow clicking slides (img area)
+        slider.addEventListener("click", function (ev) {
+          var li = ev.target.closest("li");
+          if (!li) return;
+          var idx = slides.indexOf(li);
+          if (idx >= 0) {
+            goToHobbyIndex(idx);
+            pauseAutoplayTemporarily();
+          }
+        });
+
+        // autoplay: cycles through hobbyItems, mapping them to slides
+        var AUTOPLAY_MS = 4500; // change me if you want different timing
+        var autoplayTimer = null;
+        var currentHobbyIndex = 0; // tracks which hobby (not slide) we're on
+
+        function startAutoplay() {
+          stopAutoplay();
+          autoplayTimer = setInterval(function () {
+            currentHobbyIndex = (currentHobbyIndex + 1) % hobbyItems.length;
+            goToHobbyIndex(currentHobbyIndex);
+          }, AUTOPLAY_MS);
+        }
+        function stopAutoplay() {
+          if (autoplayTimer) {
+            clearInterval(autoplayTimer);
+            autoplayTimer = null;
+          }
+        }
+
+        // when user interacts, pause briefly so they can read
+        var pauseTimeout = null;
+        function pauseAutoplayTemporarily() {
+          stopAutoplay();
+          if (pauseTimeout) clearTimeout(pauseTimeout);
+          pauseTimeout = setTimeout(function () {
+            startAutoplay();
+          }, 6000); // resume after 6s of inactivity
+        }
+
+        // pause on hover over slider — helpful for reading
+        slider.addEventListener("mouseenter", function () {
+          stopAutoplay();
+        });
+        slider.addEventListener("mouseleave", function () {
+          // resume after a short delay to avoid immediate movement
+          pauseAutoplayTemporarily();
+        });
+
+        // When the slider's existing framework toggles "selected" class, sync our hobby index.
+        // Use a MutationObserver to catch class changes on the slide LIs.
+        try {
+          var mo = new MutationObserver(function (mutations) {
+            // if a slide becomes selected by external script, update our currentHobbyIndex to match that slide
+            var selectedSlide = currentSelectedIndex();
+            // find the first hobbyIndex that maps to selectedSlide
+            // choose hobbyIndex in range [0, hobbyItems.length) that maps to selectedSlide
+            var found = 0;
+            for (var i = 0; i < hobbyItems.length; i++) {
+              if (mapIndexToSlide(i) === selectedSlide) {
+                found = i;
+                break;
+              }
+            }
+            currentHobbyIndex = found;
+            updateTextForIndex(currentHobbyIndex);
+          });
+          mo.observe(slider, {
+            subtree: true,
+            attributes: true,
+            attributeFilter: ["class"],
+          });
+        } catch (e) {
+          // no big deal if MutationObserver isn't available
+        }
+
+        // init: pick an initial hobby index based on selected slide or zero
+        (function init() {
+          var initialSlide = currentSelectedIndex();
+          // pick first hobby index mapping to that slide
+          for (var i = 0; i < hobbyItems.length; i++) {
+            if (mapIndexToSlide(i) === initialSlide) {
+              currentHobbyIndex = i;
+              break;
+            }
+          }
+          // set visuals and text
+          setSelectedSlide(mapIndexToSlide(currentHobbyIndex));
+          updateTextForIndex(currentHobbyIndex);
+          // start autoplay
+          startAutoplay();
+        })();
+
+        // expose debug helpers
+        window.__hobbySlider = {
+          goToHobbyIndex: goToHobbyIndex,
+          startAutoplay: startAutoplay,
+          stopAutoplay: stopAutoplay,
+          hobbyItems: hobbyItems,
+        };
+      })();
+    </script>
+
+    <!-- END NAV JS -->
+  </body>
+</html>
